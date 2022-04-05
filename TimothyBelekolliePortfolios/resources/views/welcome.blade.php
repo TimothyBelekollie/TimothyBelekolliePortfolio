@@ -35,6 +35,11 @@
                     @endauth
                 </div>
             @endif
+            {{-- <div x-data="{count:0}">
+                <span x-text="{count}"></span>
+                <button x-on:click="count++">Click Me</button>
+                 
+            </div> --}}
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -127,6 +132,16 @@
                     </div>
                 </div>
             </div>
+            <div x-data="{ show: false }">
+                <button @click="show = !show">Show</button>
+                <h1 x-show="show">Alpine Js is working !</h1>
+            </div>
+            <hr>
+        
+            <div x-data>
+                <button @click="alert('Alpine Js is working !')">Click</button>
+            </div>
         </div>
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </body>
 </html>
