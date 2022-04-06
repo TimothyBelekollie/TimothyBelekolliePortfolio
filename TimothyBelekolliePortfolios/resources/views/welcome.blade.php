@@ -35,11 +35,11 @@
                     @endauth
                 </div>
             @endif
-            {{-- <div x-data="{count:0}">
-                <span x-text="{count}"></span>
+            <div x-data="{count:0}">
+                <span x-text="count"></span>
                 <button x-on:click="count++">Click Me</button>
                  
-            </div> --}}
+            </div> 
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
